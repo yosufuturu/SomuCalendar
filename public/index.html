@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./cal.css">
+    <title>カレンダ</title>
+</head>
+
+<body>
+    <header>
+        <h1>そむそむカレンダ</h1>
+    </header>
+
+    <main>
+        <div>
+            <!-- Calender -->
+            <div id="calenderSection">
+                
+                <div id="cal_header"></div>
+                <div id="next_before_button">
+                    <!--- Move Before Month-->
+                    <button id="Before_month_js"><</button>
+                    
+                    <button id="Shige_func">Today</button>
+
+                    <!--- Move Next Month-->
+                    <button id="next_month_js" >></button>
+                </div>
+                <div id="calendar"></div>
+            </div>
+
+            <!-- Mask -->
+            <div id="mask" class="hidden"></div>
+
+            <!-- Modal -->
+            <section id="modal" class="hidden">
+                <div id="modal_header">
+                    <div id="date" data-id=""></div>
+                    <div>memo</div>
+                </div>
+                <div id="memobox">
+                    <ul id="memolist">
+                        
+                    </ul>
+                </div>
+
+                <textarea id="input_memo" value=""></textarea>
+
+                <!-- close modale -->
+                <div class="modal_button_wrapper">
+                    <div id="Registed" class="modal_button">Registed</div>
+                    <div id="memo_close" class="modal_button">Close</div>
+                </div>
+            </section>
+
+            <section id="jump_modal" class="hidden">
+                <input type="month" id="input_month" value="">
+                <div class="modal_button_wrapper">
+                    <div id="jump" class="modal_button">jump</div>
+                    <div id="jump_cancel" class="modal_button">cancel</div>
+                </div>
+            </section>
+
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>©somu 2022</p>   
+    </footer>
+
+    <script type="module" src="./cal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+/** cal.css */
+
+.cal_wrapper {
+    text-align: center;
+}
+
+#calendar {
+    text-align: center;
+}
+
+td div {
+    text-decoration: none;
+    display: block;
+    padding : 15px 15px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+th, td{
+    border: 1px solid black;
+    width: 14%;
+    text-align: center;
+}
+th{
+    padding : 15px 15px;
+}
+td {
+    color: #3c4043;
+}
+td:first-child div {
+    color: red;
+}
+td:first-child div.disabled {
+    color: salmon;
+}
+
+td:last-child div {
+    color: mediumblue;
+}
+
+td:last-child div.disabled {
+    color: lightskyblue;
+}
+div.disabled {
+    color: darkgray;
+}
+td.today {
+    background-color: skyblue;
+    color: #fff;
+}
+
+#next_before_button {
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#next_before_button button{
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+#next_before_button button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+#next_before_button button:active  {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+#Shige_func {
+    text-align: center;
+}
+
+#cal_header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}

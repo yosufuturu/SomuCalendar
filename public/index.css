@@ -1,0 +1,117 @@
+:root {
+    --modal-width: 300px;
+    --kadomaru: 16px;
+    --batumaru: 16px;
+}
+
+.modal_button {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    background: #ff8c00;
+    position: relative;
+    font-size: 20px;
+}
+
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#modal {
+    background: #fff;
+    width: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#input_memo {
+    height: 56px;
+    width: var(--modal-width);
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#modal_header {
+    font-weight: bold;
+}
+
+#jump_modal {
+    background: #fff;
+    width: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    z-index: 2;
+    text-align: center;
+    border-radius: var(--kadomaru);
+}
+
+.modal_button_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+#input_month {
+    font-size: 24px;
+}
+
+#memolist {
+    height: 400px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    gap: 4px;
+    padding-left: 30px;
+}
+.items {
+    background:teal;
+    width: calc(var(--modal-width) * 0.96);
+    border-radius: var(--kadomaru);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ItemText{
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.delete {
+    height:var(--batumaru);
+    width:var(--batumaru);
+    border-radius:50%;
+    line-height:var(--batumaru);
+    text-align:center;
+    background:orangered;
+    font-size:var(--batumaru);
+    font-weight: bold;
+    color: #fff;
+    margin-right:8px;
+    cursor: pointer;
+}
